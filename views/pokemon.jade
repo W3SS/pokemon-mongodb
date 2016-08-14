@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 pokemon
+  ul
+    each pokemon, i in pokelist
+        li
+            a(href=pokemon.species.url)= pokemon.name
